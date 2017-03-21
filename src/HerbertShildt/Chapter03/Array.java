@@ -7,6 +7,7 @@ public class Array {
     public static void main(String[] args) {
         int month_day[];
         month_day = new int[12];
+        // int month_day[] = new int[12];
         month_day[0] = 31;
         month_day[1] = 28;
         month_day[2] = 31;
