@@ -1,4 +1,4 @@
-package Shildt.Chapter02;
+package HerbertSсhildt.Chapter03;
 
 /**
  * Created by Oleg Kabysh on 20.03.2017.
