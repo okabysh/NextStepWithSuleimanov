@@ -8,11 +8,11 @@ public class BoxDemo {
         Box mybox = new Box();
         double vol;
 
-        mybox.weight = 10;
+        mybox.width = 10;
         mybox.height = 20;
         mybox.depth = 15;
 
-        vol = mybox.weight * mybox.height * mybox.depth;
+        vol = mybox.width * mybox.height * mybox.depth;
         System.out.println("Volume = " + vol);
     }
 }
