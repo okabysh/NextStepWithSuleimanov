@@ -30,4 +30,9 @@ public class Box {
         return width * height * depth;
     }
 
+    public Box(Box ob) {
+        width = ob.width;
+        height = ob.height;
+        depth = ob.depth;
+    }
 }
