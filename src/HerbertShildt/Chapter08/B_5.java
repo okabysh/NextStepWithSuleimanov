@@ -11,6 +11,7 @@ public class B_5 extends A_5 {
     }
 
     void show() {
+        super.show();
         System.out.println("k = " + k);
     }
  }
