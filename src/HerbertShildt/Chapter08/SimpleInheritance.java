@@ -4,6 +4,7 @@ package HerbertShildt.Chapter08;
  * Created by Oleg Kabysh on 27.03.2017.
  */
 public class SimpleInheritance {
+
     public static void main(String[] args) {
         A superObj = new A();
         B subObj = new B();
