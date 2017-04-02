@@ -3,8 +3,8 @@ package HerbertShildt.Chapter09.p1;
 /**
  * Created by Oleg Kabysh on 01.04.2017.
  */
-public class SamePackage {
-    public SamePackage() {
+class SamePackage {
+    SamePackage() {
         Protection p = new Protection();
         System.out.println("It is the constractor SamePackage");
         System.out.println("p.n = " + p.n);

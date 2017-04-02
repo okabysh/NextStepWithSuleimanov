@@ -5,7 +5,7 @@ import HerbertShildt.Chapter09.p1.Protection;
 /**
  * Created by Oleg Kabysh on 02.04.2017.
  */
-public class OtherPackage {
+class OtherPackage {
     OtherPackage() {
         Protection p = new Protection();
         System.out.println("It is constructor from other package");

@@ -3,7 +3,7 @@ package HerbertShildt.Chapter09.p1;
 /**
  * Created by Oleg Kabysh on 01.04.2017.
  */
-public class Derived extends Protection {
+class Derived extends Protection {
     Derived() {
         System.out.println("It is the constructor of subclass");
         System.out.println("n = " + n);
