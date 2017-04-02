@@ -1,4 +1,4 @@
-package HerbertShildt.Chapter09.InterfaceStack;
+package HerbertShildt.Chapter09.InterfaceFixStack;
 
 /**
  * Created by Oleg Kabysh on 02.04.2017.
