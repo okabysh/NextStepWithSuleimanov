@@ -1,9 +1,9 @@
-package HerbertShildt.Chapter09.InterfaceDynamicStack;
+package HerbertShildt.Chapter09.InterfaceFixStack;
 
 /**
  * Created by Oleg Kabysh on 02.04.2017.
  */
-class DynStack implements IntStack {
+class DynStack implements HerbertShildt.Chapter09.InterfaceFixStack.IntStack {
     private int stck[];
     private int tos;
 

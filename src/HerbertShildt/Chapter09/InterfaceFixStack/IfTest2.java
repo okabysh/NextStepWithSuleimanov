@@ -1,4 +1,6 @@
-package HerbertShildt.Chapter09.InterfaceDynamicStack;
+package HerbertShildt.Chapter09.InterfaceFixStack;
+
+import HerbertShildt.Chapter09.InterfaceFixStack.DynStack;
 
 /**
  * Created by Oleg Kabysh on 02.04.2017.
