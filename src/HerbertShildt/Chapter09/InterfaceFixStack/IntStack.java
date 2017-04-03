@@ -6,4 +6,7 @@ package HerbertShildt.Chapter09.InterfaceFixStack;
 interface IntStack {
     void push(int item);
     int pop();
+    default void clear() {
+        System.out.println("Method Clear not implement");
+    }
 }
