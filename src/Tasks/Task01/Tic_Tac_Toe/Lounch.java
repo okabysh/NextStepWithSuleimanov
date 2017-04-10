@@ -8,6 +8,15 @@ import java.util.Random;
 public class Lounch {
     public static void main(String[] args) {
         String[] fieldArray = new String[9];
+
+        (fieldArray[0] == "Х" || fieldArray[0] == "O") &&
+                (fieldArray[1] == "Х" || fieldArray[1] == "O") &&
+                        (fieldArray[2] == "Х" || fieldArray[2] == "O")
+
+        for (String element :
+                fieldArray) {
+            element
+        }
         Field field = new Field();
 
         field.update(fieldArray);
