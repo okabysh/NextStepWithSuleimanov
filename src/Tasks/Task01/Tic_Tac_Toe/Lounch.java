@@ -1,41 +1,50 @@
 package Tasks.Task01.Tic_Tac_Toe;
 
-import java.util.Random;
+import static Tasks.Task01.Tic_Tac_Toe.Engine.*;
 
 /**
  * Created by kabysh_ol on 10.04.2017.
  */
 public class Lounch {
     public static void main(String[] args) {
-        String[] fieldArray = new String[9];
-
-        if ((fieldArray[0] == "Х" || fieldArray[0] == "O") &&
-                (fieldArray[1] == "Х" || fieldArray[1] == "O") &&
-                        (fieldArray[2] == "Х" || fieldArray[2] == "O")) {}
-
-        for (String element :
-                fieldArray) {
-            //element;
-        }
+        Engine engine = new Engine();
         Field field = new Field();
+        int result;
 
-        field.update(fieldArray);
+        System.out.println("Добро пожаловать в простую игру Крестики - нолики!");
+        field.draw();
 
-//
-//        for (String itera:
-//                field) {
-//            System.out.println(itera);
-//        }
-//        Random random = new Random();
-//        while (true) {
-//            if (random.nextInt(9) == 8) {
-//                System.out.println("OK");
-//                break;
-//            }
-//        }
-//        for (int i=0; i<50; i++) {
-//            System.out.println(random.nextInt(9));
-//        }
+        while (winner == Player.NOBODY) {
+            result = engine.nextMove();
+            if (result == -1) {
+                continue;
+            } else {
+                if (engine.checkMoveToField(result) == true) {
+                    engine.setMove(result);
+                } else {
+                    continue;
+                }
+                engine.checkWhoIsWinner();
+                if (winner != Player.NOBODY) {
+                    break;
+                }
+            }
+            field.draw("toConsole");
+            // кто ходит следующий
+            if (whoIsMove == Player.USER) {
+                whoIsMove = Player.COMPUTER;
+            } else if (whoIsMove == Player.COMPUTER) {
+                whoIsMove = Player.USER;
+            }
+        }
 
+        field.draw("toConsole");
+        System.out.println();
+        if (winner == Player.COMPUTER) {
+            System.out.println("Computer выиграл!");
+        } else if (winner == Player.USER) {
+            System.out.println("Поздравляем!");
+            System.out.println("Вы победитель!");
+        }
     }
 }

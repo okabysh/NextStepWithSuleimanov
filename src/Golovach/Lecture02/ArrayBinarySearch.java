@@ -17,6 +17,6 @@ public class ArrayBinarySearch {
         System.out.println(Arrays.binarySearch(array, 35));
         System.out.println(Arrays.binarySearch(array, 40));
         System.out.println(Arrays.binarySearch(array, 45));
-        System.out.println(Arrays.binarySearch(array, 50));
+        System.out.println(Arrays.binarySearch(array, 50 ));
     }
 }
