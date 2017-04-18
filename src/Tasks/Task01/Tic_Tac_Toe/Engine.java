@@ -66,7 +66,7 @@ public class Engine {
     }
 
     public void setMove(int toField) {
-        // установим ход игрока
+        // сохраним ход в массив
         if (whoIsMove == Player.USER) {
             fieldArray[toField] = "X";
         } else {
